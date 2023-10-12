@@ -49,12 +49,11 @@ public class SaucedemoTest {
         chromeDriver.findElement(org.openqa.selenium.By.id("login-button")).click();
 
         List<WebElement> listaProductos = chromeDriver.findElements(By.className("inventory_item"));
-        List<WebElement> botonesAgregarCarrito = chromeDriver.findElements(By.xpath("//button[contains(@id, 'add-to-cart')]"));
 
         for (int i = 0; i < listaProductos.size(); i++){
             precioPorProducto = listaProductos.get(i).findElement(By.className("inventory_item_price")).getText();
             if (convertirStringDobleSinSigno(precioPorProducto) <= 20.00){
-                botonesAgregarCarrito.get(i).click();
+                listaProductos.get(i).findElement(By.xpath(".//button")).click();
             }
         }
         chromeDriver.close();
