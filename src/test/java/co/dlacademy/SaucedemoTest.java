@@ -86,7 +86,7 @@ public class SaucedemoTest {
 
             if (valorPrecioProducto <= 20.0)
             {
-                producto.findElement(By.className("pricebar")).click();
+                producto.findElement(By.xpath(".//button")).click(); //update
                 System.out.println(valorPrecioProducto);
             }
         }
