@@ -23,7 +23,7 @@ public class SaucedemoTest {
     }
 
     @Test
-    public void agregarProductosLista(){
+    public void agregarProductosLista() throws InterruptedException {
         String precioPorProducto;
         chromeDriver.findElement(org.openqa.selenium.By.id("user-name")).sendKeys("standard_user");
         chromeDriver.findElement(org.openqa.selenium.By.name("password")).sendKeys("secret_sauce");
@@ -35,8 +35,9 @@ public class SaucedemoTest {
             precioPorProducto = listaProductos.get(i).findElement(By.className("inventory_item_price")).getText();
             if (convertirStringDobleSinSigno(precioPorProducto) <= 20.00){
                 listaProductos.get(i).findElement(By.xpath(".//button")).click();
+                Thread.sleep(10000);
             }
         }
-        chromeDriver.close();
+       // chromeDriver.close();
     }
 }
