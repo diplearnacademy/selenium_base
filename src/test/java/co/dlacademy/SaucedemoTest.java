@@ -1,6 +1,5 @@
 package co.dlacademy;
 
-import co.dlacademy.page_object.Por;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -21,24 +20,6 @@ public class SaucedemoTest {
         chromeDriver = new ChromeDriver();
         chromeDriver.manage().window().maximize();
         chromeDriver.get("https://www.saucedemo.com/");
-    }
-
-    @Test
-    public void loginEnSaucedemoExitosoConAtributos(){
-        //chromeDriver.findElement(org.openqa.selenium.By.id("user-name")).click();
-        chromeDriver.findElement(org.openqa.selenium.By.id("user-name")).sendKeys("standard_user");
-        //chromeDriver.findElement(org.openqa.selenium.By.id("password")).click();
-        chromeDriver.findElement(org.openqa.selenium.By.name("password")).sendKeys("secret_sauce");
-        chromeDriver.findElement(org.openqa.selenium.By.id("login-button")).click();
-        chromeDriver.close();
-    }
-
-    @Test
-    public void loginEnSaucedemoExitosoConDatates(){
-        chromeDriver.findElement(Por.dataTest("username")).sendKeys("standard_user");
-        chromeDriver.findElement(Por.dataTest("password")).sendKeys("secret_sauce");
-        chromeDriver.findElement(Por.dataTest("login-button")).click();
-        chromeDriver.close();
     }
 
     @Test
