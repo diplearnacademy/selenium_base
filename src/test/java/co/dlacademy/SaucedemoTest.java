@@ -38,6 +38,6 @@ public class SaucedemoTest {
                 Thread.sleep(10000);
             }
         }
-       // chromeDriver.close();
+        chromeDriver.close();
     }
 }

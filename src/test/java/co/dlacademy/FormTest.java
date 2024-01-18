@@ -24,7 +24,6 @@ public class FormTest {
             Thread.sleep(2000);
             chromeDriver.findElement(By.name("demo-priority")).click();
         }
-
-       // chromeDriver.close();
+        chromeDriver.close();
     }
 }

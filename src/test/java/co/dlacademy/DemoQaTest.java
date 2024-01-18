@@ -23,7 +23,6 @@ public class DemoQaTest {
         chromeDriver.findElement(By.id("startStopButton")).click();
         barraProgreso = chromeDriver.findElement(By.xpath("//div[@role='progressbar' and contains(.,'100')]")).getText();
         System.out.println(barraProgreso);
-        // Thread.sleep(4000); //Mala practica, No usar.
         chromeDriver.findElement(By.id("resetButton")).click();
         chromeDriver.close();
     }
