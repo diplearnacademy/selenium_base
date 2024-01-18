@@ -34,13 +34,9 @@ public class SaucedemoTest {
         msEdgeDriver.findElement(By.id("password")).click();
         msEdgeDriver.findElement(By.id("password")).sendKeys("secret_sauce");
         msEdgeDriver.findElement(By.id("password")).submit();
-        //Thread.sleep(3000); pausar para poder ver :v <---- no hacer nunca
+        Thread.sleep(3000);// pausar para poder ver :v <---- no hacer nunca
         //msEdgeDriver.close();
         //msEdgeDriver.quit();
-
-
-        //Por es una clase abstracta
-
     }
 
     @Test
