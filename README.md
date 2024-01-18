@@ -21,11 +21,11 @@ Este proyecto implementa Seleniun para conocer sus funciones basicas para intera
   `gradle clean test`
   o
   `./gradlew clean test`
-  si quieres ver la trazabilidad de la ejcución, anade al comando que vas a ejecutar
+  Si quieres ver la trazabilidad de la ejcución, anade al comando que vas a ejecutar
 
   `--info --stacktrace`
 
-- si quiere ejecutar los escenarios de forma independiente puede usar las opcines del IDE en cada clase
+- Si quiere ejecutar los escenarios de forma independiente puede usar las opcines del IDE en cada clase
 #### Revisión de resultado
 
 Gradle genera un reporte en HTML para revisar este reporte ve a la siguiente ruta
