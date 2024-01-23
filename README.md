@@ -1,14 +1,14 @@
 ### Proyecto base de Selenium
 
-Este proyecto implementa Seleniun para conocer sus funciones basicas para interactuar con el Navegadro apoyandose el la libreria Junit para ejecutar las pruebas
+Este proyecto implementa Selenium para conocer sus funciones basicas e interactuar con el Navegador apoyandose de la libreria Junit para ejecutar las pruebas.
 
 - Rama **main**: Esta rama contiene una estructura basica con las dependencias y un ejemplo  de los metodos de Selenium
-- Rama **webdriver**: Esta rama contiene la implementacion de varios escenarios donde se usan difenretes metodos proporcionados por Selenium para conocer su funcionamienot
+- Rama **webdriver**: Esta rama contiene la implementacion de varios escenarios donde se usan diferentes metodos proporcionados por Selenium para conocer su funcionamiento
 - Rama **SeleniumEdge**: Esta rama contiene ejemplo de uso de selenium usando como navegador para los escenarios Edge
 
 
 #### Consideraciones
-- cada rama tiene uncluida  el chromedrver o el edgedriver con la version 120.0 de los respectivos navegadores  verifique que su navegador tiene esta version en el caso de tener una version diferente
+- cada rama tiene incluida  el chromedriver o el edgedriver con la version 120.0 de los respectivos navegadores  verifique que su navegador tiene esta version en el caso de tener una version diferente
   actualice en la carpeta  `RUTA_DEL_PRUYECTO/src/test/java/resource/drivers` el driver correspondiente a la version de su navegador
 
 - chrome: https://chromedriver.chromium.org/downloads/version-selection
